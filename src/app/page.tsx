@@ -9,7 +9,7 @@ export default function Home() {
             Elevate your sound experience.
           </h1>
           <p className="w-1/2">
-            Discover speakers crafted for those who demand more than just music—clarity, power, and elegance in every note.
+            Discover speakers crafted for those who demand more than just music clarity, power, and elegance in every note.
           </p>
           <button className="flex items-center gap-1 cursor-pointer bg-foreground text-background px-10 py-5 rounded-full font-medium">
             Explore the Collection
@@ -21,7 +21,7 @@ export default function Home() {
       <section className="bg-foreground/5 py-40">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-5xl font-semibold">
-            Experience clarity, depth, and balance—crafted for true music lovers.
+            Experience clarity, depth, and balance crafted for true music lovers.
           </h2>
         </div>
       </section>
