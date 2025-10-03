@@ -19,9 +19,9 @@ export default function Home() {
         <img src="/main-product.webp" alt="aureon" className="mx-auto mt-20" />
       </section>
       <section className="bg-muted py-40">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-5xl font-semibold">
-            Experience clarity, depth, and balance crafted for true music lovers.
+            Experience <div className="w-28 h-16 -mb-3 shrink-0 bg-muted-foreground rounded-xl inline-block"></div> depth, balance and clarity crafted for true <div className="w-28 h-16 -mb-3 shrink-0 bg-muted-foreground rounded-xl inline-block"></div> music lovers.
           </h2>
         </div>
       </section>
