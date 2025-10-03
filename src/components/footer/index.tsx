@@ -21,7 +21,7 @@ const footerLinks = [
 
 const Footer = () => {
     return (
-        <footer className='bg-black text-white'>
+        <footer className='bg-muted'>
             <div className='max-w-6xl mx-auto py-20 space-y-20'>
                 <div className='flex justify-between items-start'>
                     <p>
@@ -43,7 +43,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='h-60 overflow-hidden flex items-center justify-center'>
-                    <h4 className='text-[25.5rem] mb-17 mr-3 opacity-10 font-semibold tracking-tighter'>
+                    <h4 className='text-[25.5rem] mb-17 mr-3 opacity-10 font-semibold tracking-tighter select-none'>
                         aureon
                     </h4>
                 </div>

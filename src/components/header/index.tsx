@@ -23,13 +23,13 @@ const Header = () => {
                 </div>
                 <nav className='flex gap-10 justify-center'>
                     {navLinks.map((link) => (
-                        <Link key={link.href} href={link.href} className='hover:opacity-75 transition-opacity'>
+                        <Link key={link.href} href={link.href} className='hover:text-muted-foreground'>
                             {link.name}
                         </Link>
                     ))}
                 </nav>
                 <div className='flex justify-end'>
-                    <button className='cursor-pointer text-sm flex items-center gap-1 bg-foreground/5 rounded-full px-4 py-2 font-medium'>
+                    <button className='cursor-pointer text-sm flex items-center gap-1 border hover:bg-muted rounded-full px-4 py-2 font-medium'>
                         Shop Now
                         <ChevronRight size={15} />
                     </button>
