@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
+import ThemeButton from './ThemeButton'
 
 const navLinks = [
     { name: 'Products', href: '/products' },
@@ -28,7 +29,8 @@ const Header = () => {
                         </Link>
                     ))}
                 </nav>
-                <div className='flex justify-end'>
+                <div className='flex justify-end items-center gap-2'>
+                    <ThemeButton />
                     <button className='cursor-pointer text-sm flex items-center gap-1 border hover:bg-muted rounded-full px-4 py-2 font-medium'>
                         Shop Now
                         <ChevronRight size={15} />

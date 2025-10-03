@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <section className="max-w-6xl mx-auto">
         <div className="text-center mt-40 flex flex-col gap-10 items-center">
-          <h1 className=" font-bold text-6xl">
+          <h1 className=" font-bold text-6xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/50 dark:to-foreground/25 pb-2">
             Immerse yourself in sound
           </h1>
           <p className="w-1/2">
@@ -25,8 +25,8 @@ export default function Home() {
           </h2>
         </div>
       </section>
-      <section className="max-w-6xl mx-auto py-40">
-        <div className="grid grid-cols-2 gap-x-20 gap-y-40 items-center">
+      <section className="max-w-6xl mx-auto py-40 space-y-40">
+        <div className="grid grid-cols-2 gap-20 items-center">
           <div className="space-y-10">
             <div className="flex items-center gap-3">
               <AudioLines />
@@ -44,7 +44,8 @@ export default function Home() {
             </button>
           </div>
           <div className="aspect-square shrink-0 rounded-3xl bg-muted"></div>
-
+        </div>
+        <div className="grid grid-cols-2 items-center gap-20">
           <div className="aspect-square shrink-0 rounded-3xl bg-muted"></div>
           <div className="space-y-10">
             <div className="flex items-center gap-3">
