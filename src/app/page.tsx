@@ -3,12 +3,12 @@ import { AudioLines, ChevronRight, Smartphone } from "lucide-react";
 export default function Home() {
   return (
     <main>
-      <section className="max-w-6xl mx-auto">
-        <div className="text-center mt-40 flex flex-col gap-10 items-center">
-          <h1 className=" font-bold text-6xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/50 dark:to-foreground/25 pb-2">
+      <section className="max-h-screen pt-40 max-md:pt-32 overflow-hidden max-md:px-5">
+        <div className="max-w-6xl mx-auto text-center flex flex-col gap-10 items-center">
+          <h1 className=" font-bold text-6xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/50 dark:to-foreground/25 pb-2 max-md:pb-0">
             Immerse yourself in sound
           </h1>
-          <p className="w-1/2">
+          <p className="w-1/2 max-md:w-full">
             Discover speakers crafted for those who demand more than just music clarity, power, and elegance in every note.
           </p>
           <button className="flex items-center gap-1 cursor-pointer bg-foreground text-background px-10 py-5 rounded-full font-medium hover:scale-105 transition-transform">
@@ -18,15 +18,15 @@ export default function Home() {
         </div>
         <img src="/main-product.webp" alt="aureon" className="mx-auto mt-20" />
       </section>
-      <section className="bg-muted py-40">
+      <section className="bg-muted py-40 max-md:py-20 max-md:px-5">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-5xl font-semibold">
-            Experience <div className="w-28 h-16 -mb-3 shrink-0 bg-muted-foreground rounded-xl inline-block"></div> depth, balance and clarity crafted for true <div className="w-28 h-16 -mb-3 shrink-0 bg-muted-foreground rounded-xl inline-block"></div> music lovers.
+          <h2 className="text-5xl max-md:text-4xl font-semibold">
+            Experience <div className="w-28 h-16 max-md:w-20 max-md:h-12 -mb-3 shrink-0 bg-muted-foreground rounded-xl inline-block"></div> depth, balance and clarity crafted for true <div className="w-28 h-16 max-md:w-20 max-md:h-12 -mb-3 shrink-0 bg-muted-foreground rounded-xl inline-block"></div> music lovers.
           </h2>
         </div>
       </section>
-      <section className="max-w-6xl mx-auto py-40 space-y-40">
-        <div className="grid grid-cols-2 gap-20 items-center">
+      <section className="max-w-6xl mx-auto py-40 max-md:py-20 space-y-40 max-md:space-y-20 max-md:px-5">
+        <div className="grid grid-cols-2 gap-20 max-md:gap-10 items-center max-md:flex max-md:flex-col">
           <div className="space-y-10">
             <div className="flex items-center gap-3">
               <AudioLines />
@@ -43,10 +43,10 @@ export default function Home() {
               <ChevronRight size={15} />
             </button>
           </div>
-          <div className="aspect-square shrink-0 rounded-3xl bg-muted"></div>
+          <div className="aspect-square shrink-0 rounded-3xl bg-muted w-full"></div>
         </div>
-        <div className="grid grid-cols-2 items-center gap-20">
-          <div className="aspect-square shrink-0 rounded-3xl bg-muted"></div>
+        <div className="grid grid-cols-2 gap-20 max-md:gap-10 items-center max-md:flex max-md:flex-col-reverse">
+          <div className="aspect-square shrink-0 rounded-3xl bg-muted w-full"></div>
           <div className="space-y-10">
             <div className="flex items-center gap-3">
               <Smartphone />

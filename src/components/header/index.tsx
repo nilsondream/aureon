@@ -12,8 +12,8 @@ const navLinks = [
 
 const Header = () => {
     return (
-        <header className='fixed top-0 left-0 z-50 w-full bg-background/75 backdrop-blur-sm'>
-            <div className='max-w-7xl mx-auto py-5 grid grid-cols-[1fr_2fr_1fr] items-center'>
+        <header className='fixed top-0 left-0 z-50 w-full bg-background/75 backdrop-blur-md'>
+            <div className='max-w-7xl max-md:w-full mx-auto py-5 grid grid-cols-[1fr_2fr_1fr] items-center max-md:flex max-md:justify-between max-md:px-5'>
                 <div className='flex justify-start'>
                     <Link href="/" className='flex items-center gap-3 text-2xl font-medium'>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 48" fill="currentColor" className='w-6'>
@@ -22,7 +22,7 @@ const Header = () => {
                         <span>aureon</span>
                     </Link>
                 </div>
-                <nav className='flex gap-10 justify-center'>
+                <nav className='flex gap-10 justify-center max-md:hidden'>
                     {navLinks.map((link) => (
                         <Link key={link.href} href={link.href} className='hover:text-muted-foreground'>
                             {link.name}

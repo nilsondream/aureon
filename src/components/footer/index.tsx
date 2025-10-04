@@ -22,12 +22,12 @@ const footerLinks = [
 const Footer = () => {
     return (
         <footer className='bg-muted'>
-            <div className='max-w-6xl mx-auto py-20 space-y-20'>
-                <div className='flex justify-between items-start'>
+            <div className='max-w-6xl mx-auto py-20 space-y-20 max-md:px-5'>
+                <div className='flex justify-between items-start max-md:flex-col max-md:gap-10'>
                     <p>
                         &copy; <span className='text-2xl font-medium'>aureon</span> | The Perfect Sound, Anywhere
                     </p>
-                    <div className='grid grid-cols-2 gap-40'>
+                    <div className='grid grid-cols-2 gap-40 max-md:gap-5 max-md:w-full'>
                         {footerLinks.map((section, index) => (
                             <div key={index} className='space-y-5'>
                                 <h4>{section.title}</h4>
@@ -42,8 +42,8 @@ const Footer = () => {
                         ))}
                     </div>
                 </div>
-                <div className='h-60 overflow-hidden flex items-center justify-center'>
-                    <h4 className='text-[25.5rem] mb-17 mr-3 opacity-10 font-semibold tracking-tighter select-none'>
+                <div className='h-60 max-md:h-20 overflow-hidden flex items-center justify-center'>
+                    <h4 className='text-[25.5rem] max-md:text-[7.5rem] mb-17 max-md:mb-5 pr-3 max-md:pr-1  opacity-10 font-semibold tracking-tighter select-none'>
                         aureon
                     </h4>
                 </div>
